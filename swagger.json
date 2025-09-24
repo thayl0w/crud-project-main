@@ -8,7 +8,6 @@
   "host": "crud-project-main.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
