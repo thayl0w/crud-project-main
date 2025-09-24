@@ -5,7 +5,7 @@
     "description": "API documentation for managing employees and tasks in a CRUD project.",
     "version": "1.0.0"
   },
-  "host": "https://crud-project-main.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
     "http",
