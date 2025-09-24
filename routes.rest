@@ -1,0 +1,102 @@
+// LOCALHOST
+### Get all employees
+GET http://localhost:3000/employees
+
+
+### Get employee by ID
+GET http://localhost:3000/employees/6879573551a314d38f854c5a
+
+
+### Create employee
+POST http://localhost:3000/employees HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Mare Mare",
+  "email": "mare@example.com",
+  "role": "Backend Intern",
+  "department": "Web Development",
+  "status": "active",
+  "dateHired": "2024-06-09",
+  "phone": "+639123456789"
+}
+
+### Test 400 validation - Missing required fields
+POST http://localhost:3000/employees HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Test User",
+  "email": "invalid-email"
+}
+
+### PUT employee
+PUT http://localhost:3000/employees/6879577851a314d38f854c5c HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Jeremiah Nacionales",
+  "email": "jere.ns@example.com",
+  "role": "UI/UX Designer",
+  "department": "Design",
+  "status": "on leave",
+  "dateHired": "2022-02-28",
+  "phone": "+639154327890"
+}
+
+### Delete employee
+DELETE http://localhost:3000/employees/687aa7600e761e67056377ad HTTP/1.1
+
+
+
+#############################################################// TASKS
+### Get all tasks
+GET http://localhost:3000/tasks
+
+
+### Get task by ID
+GET http://localhost:3000/tasks/687958df51a314d38f854c5e
+
+
+### Create task
+POST http://localhost:3000/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Refactor facebook Components",
+    "description": "Break down large components in the dashboard into smaller reusable components. Follow React best practices.",
+    "assignedTo": "6879573551a314d38f854c5a",
+    "priority": "medium",
+    "status": "in progress",
+    "dueDate": "2025-07-20",
+    "createdAt": "2025-07-16T09:00:00Z",
+    "updatedAt": "2025-07-16T12:30:00Z",
+    "remarks": "Ask mentor for review before merging to main"
+}
+
+### Test 400 validation - Missing required fields for task
+POST http://localhost:3000/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Test Task"
+}
+
+### Update task
+PUT http://localhost:3000/tasks/687aa93f8886e27a0b674f0e HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Refactor Instagram Components",
+    "description": "Break down large components in the dashboard into smaller reusable components. Follow React best practices.",
+    "assignedTo": "6879573551a314d38f854c5a",
+    "priority": "medium",
+    "status": "in progress",
+    "dueDate": "2025-07-20",
+    "createdAt": "2025-07-16T09:00:00Z",
+    "updatedAt": "2025-07-16T12:30:00Z",
+    "remarks": "Ask mentor for review before merging to main"
+}  
+
+### Delete task
+DELETE http://localhost:3000/tasks/687aa93f8886e27a0b674f0e HTTP/1.1

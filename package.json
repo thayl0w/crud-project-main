@@ -1,0 +1,25 @@
+{
+  "name": "crud-project-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "mongodb": "^6.20.0",
+    "passport": "^0.7.0",
+    "passport-github2": "^0.1.12",
+    "swagger": "^0.7.5",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
